@@ -10,6 +10,8 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
+      with:
+        ref: master  
     - name: Build iOS framework
       run: ./packages/build_ios.sh
     - uses: actions/upload-artifact@v4
