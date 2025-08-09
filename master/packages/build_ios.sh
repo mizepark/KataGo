@@ -10,8 +10,8 @@ mkdir -p ${OUTPUT_DIR}
 
 # 루트에 .xcodeproj 또는 .xcworkspace 파일 이름을 확인해서 아래를 고칠 것
 xcodebuild \
-  -workspace KataGo.xcworkspace \
-  -scheme KataGo \
+  -workspace Runner.xcworkspace \
+  -scheme Runner               \
   -configuration Release \
   -archivePath ${ARCHIVE_PATH} \
   archive
